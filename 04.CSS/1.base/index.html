@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+p{
+    text-indent: 25px;
+}
+
+div{
+    border-style: groove;
+    width: 700px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-left: 5px;
+}
+
+div a{
+    background: url(download.png) no-repeat 0 5px;
+    padding-left: 13px;
+}
+
+div a[href^="word"]{
+    background: url(word.jpg) no-repeat 100% 0px;
+    padding-right: 20px;
+    padding-left: 0px;
+}
+
+div a[href^="pdf"]{
+    background: url(pdf.png) no-repeat 100% 0px;
+    padding-right: 20px;
+    padding-left: 0px;
+}
+
+div a[href^="zip"]{
+    background: url(zip.gif) no-repeat 100% 0px;
+    padding-right: 20px;
+    padding-left: 0px;
+}
+
+ul{
+    list-style-image: url(document.jpg);
+    position: relative;
+	width: 135px;
+}
+
+li a {
+    display: block;
+}
+
+a img {
+	display: none;
+	position: absolute;
+	margin-top: -15px;
+	border: 0;
+	left: 100%;
+}
+
+a:hover img {
+	display: block;
+}
+
+
+</style>
+
+<body>
+    <h1>Форматы файлов.</h1>
+
+    <div>
+        <p>.DOC или .doc (от англ. <a href="document.html">document</a>) - расширение имени файла, 
+        используемое для файлов, 
+        представляющих текст, с разметкой и без. Расширение .DOC часто использовалось для обозначения 
+        простых текстовых файлов без формирования, однако позже стало использоваться для двоичных 
+        форматов с разметкой.<br>
+        <a href="word.html">Документ MS Word</a></p>
+    </div>
+    
+    <div>
+        <p>Portable Document Format (<a href="document.html">PDF</a>) - межплатформенный формат электронных документов, разработанный 
+        фирмой Adobe Systems с использованием ряда возможностей языка Postscript.
+        <a href="pdf.html">Документ PDF</a></p>
+    </div>
+
+    <div>
+        <p>ZIP - популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет 
+        расширение <a href="document.html">.zip</a> и хранит в сжатом или несжатом виде один или несколько файлов, который можно 
+        из него извлечь путем распаковки с помощью специальной программы.<br>
+        <a href="zip.html" class="zip">Архив</a></p>
+    </div>
+
+    <h2>Это список файлов</h2>
+    
+    <ul>
+        <li><a href="word.html">Документ MS Word <img src="word.jpg"></a></li>
+        <li><a href="pdf.html">Документ PDF <img src="pdf.png"></a></li>
+        <li><a href="zip.html">Архив <img src="zip.gif"> </a></li>
+    </ul>
+
+</body>
+</html>
